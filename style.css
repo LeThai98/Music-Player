@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.x{
+    /* layout , position  */
+
+    /* box, border*/
+
+    /* background, backdrop-filter  */
+
+    /* Text, Font, Line  */
+
+    /* Pseudo  */
+
+    /* Animate  */
+
+}
+
+.container{
+    /* layout , position  */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    /* box-model  */
+    width: 100vw;
+    height: 100vh;
+
+    /* color, background, backdrop-filter  */
+    background: #333;
+
+}
+.player-music{
+    /* layout , position  */
+
+    /* box-model  */
+    width:  400px;
+    padding: 25px 35px;
+
+    /* color, background, backdrop-filter  */
+    background: #ffe0e5;
+
+    /* Text, Font, Line  */
+    text-align: center;
+}
+
+nav{
+     /* layout , position  */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom:  30px;
+}
+
+nav .circle{
+    /* box-model  */
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 5px 10px rgba(255,26 , 26, 0.22);
+
+    /* background, backdrop-filter  */
+    line-height: 40px;
+    background: #fff;
+
+    /* Text, Font, Line  */
+    color: #f53192;
+
+}
+
+.song-img{
+   /* box, border */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #fff solid 8px;
+    box-shadow:  0 10px 60px rgba(255, 26, 26, 0.22);
+}
+.player-music h1 {
+    /* box, border*/
+    margin-top: 20px;
+
+    /* text  */
+    font-size: 20px ;
+    font-weight: 400;
+    color: #333;
+}
+
+.player-music p {
+      
+    margin-bottom: 20px;
+
+    /* text  */
+    font-size: 14px ;
+    color: #333;
+}
+
+#progress{
+
+    /* hidden css default of Input  */
+    -webkit-appearance: none;
+
+    /* box, border  */
+    width: 100%;
+    height: 6px;
+    margin: 20px;
+    border-radius: 4px;
+
+    background: #f53192;
+
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb {
+     /* hidden css default of Input  */
+     -webkit-appearance: none;
+
+     width: 20px;
+     height: 20px;
+     border: #ffff solid 6px;
+     border-radius: 50%;
+     box-shadow: 0 5px 5px rgba(255, 26,26, 0.22);
+
+     background: #f53192;
+
+}
+
+.control{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.control div {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: #f53192;
+    box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+}
+
+.control div:nth-child(2){
+    transform: scale(1.5);
+    background-color: #f53192;
+    color: #fff;
+}
