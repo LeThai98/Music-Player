@@ -10,11 +10,12 @@ let ctrlIcon = document.getElementById("ctrlIcon");
 //     progress.value = song.currentTime;
 // }
 
-song.addEventListener("loadedmetadata", (event)=>{
-    progress.max = song.duration;
-    progress.value = song.currentTime;
-})
+// song.addEventListener("loadedmetadata", (event)=>{
+//     progress.max = song.duration;
+//     progress.value = song.currentTime;
+// })
 
+// play and pause click
 function playPause(){
     if(ctrlIcon.classList.contains('fa-pause')){
         song.pause();
@@ -31,6 +32,7 @@ function playPause(){
     }
 }
 
+// update value on progress bar
 if(song.play()){
     // setInterval is used to update value by time
     setInterval(() =>{
